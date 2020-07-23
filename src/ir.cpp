@@ -1,7 +1,15 @@
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 
+
+#if defined(__AVR_ATmega328P__)
+#define IRMP_INPUT_PIN 3
+#elif defined(__AVR_ATtiny85__)
 #define IRMP_INPUT_PIN 0
+#else
+#error Unsupported MCU in ir.cpp
+#endif
+
 #define ARDUINO
 #define HIGH 1
 #define LOW 0

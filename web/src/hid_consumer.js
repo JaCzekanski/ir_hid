@@ -1,0 +1,32 @@
+// From https://github.com/NicoHood/HID/blob/d4938ddcff7970bc1d32a040a08afeac4915e4a9/src/HID-APIs/ConsumerAPI.h
+const HidConsumer = [
+	{ name: "", id: 0 },
+	{ name: "CONSUMER_POWER", id: 0x30 },
+	{ name: "CONSUMER_SLEEP", id: 0x32 },
+	{ name: "MEDIA_RECORD", id: 0xB2 },
+	{ name: "MEDIA_FAST_FORWARD", id: 0xB3 },
+	{ name: "MEDIA_REWIND", id: 0xB4 },
+	{ name: "MEDIA_NEXT", id: 0xB5 },
+	{ name: "MEDIA_PREVIOUS", id: 0xB6 },
+	{ name: "MEDIA_STOP", id: 0xB7 },
+	{ name: "MEDIA_PLAY_PAUSE", id: 0xCD },
+	{ name: "MEDIA_PAUSE", id: 0xB0 },
+	{ name: "MEDIA_VOLUME_MUTE", id: 0xE2 },
+	{ name: "MEDIA_VOLUME_UP", id: 0xE9 },
+	{ name: "MEDIA_VOLUME_DOWN", id: 0xEA },
+	{ name: "CONSUMER_BRIGHTNESS_UP", id: 0x006F },
+	{ name: "CONSUMER_BRIGHTNESS_DOWN", id: 0x0070 },
+	{ name: "CONSUMER_SCREENSAVER", id: 0x19e },
+	{ name: "CONSUMER_PROGRAMMABLE_BUTTON_CONFIGURATION", id: 0x182 },
+	{ name: "CONSUMER_CONTROL_CONFIGURATION", id: 0x183 },
+	{ name: "CONSUMER_EMAIL_READER", id: 0x18A },
+	{ name: "CONSUMER_CALCULATOR", id: 0x192 },
+	{ name: "CONSUMER_EXPLORER", id: 0x194 },
+	{ name: "CONSUMER_BROWSER_HOME", id: 0x223 },
+	{ name: "CONSUMER_BROWSER_BACK", id: 0x224 },
+	{ name: "CONSUMER_BROWSER_FORWARD", id: 0x225 },
+	{ name: "CONSUMER_BROWSER_REFRESH", id: 0x227 },
+	{ name: "CONSUMER_BROWSER_BOOKMARKS", id: 0x22A },
+];
+
+export default HidConsumer;

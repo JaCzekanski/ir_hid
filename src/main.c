@@ -132,7 +132,7 @@ int __attribute__((noreturn)) main(void) {
             // command  - 2 bytes
             // reportId - 1 byte (0 - not assigned)
             // key      - 2 bytes
-            if (!(irmpData.flags & IRMP_FLAG_REPETITION)) {
+//            if (!(irmpData.flags & IRMP_FLAG_REPETITION)) {
                 for (int i = 0; i < ENTRY_COUNT; i++) {
                     struct ButtonEntry e;
                     readButtonEntryFromEeprom(&e, i);
@@ -148,7 +148,7 @@ int __attribute__((noreturn)) main(void) {
                     } else if (e.reportId == REPORT_ID_CONSUMER) {
                         usbSendHidConsumer(e.key);
                     }
-                }
+//                }
             }
         }
 
